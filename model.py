@@ -5,3 +5,4 @@ slim = tf.contrib.slim
 
 x = tf.placeholder(tf.float32, shape=(None,32,32,1))
 net = slim.conv2d(x, 32, [3,3])
+net = slim.flatten(net)
